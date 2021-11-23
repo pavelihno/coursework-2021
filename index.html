@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css" type="text/css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="32x32">
+    <title>Найди свою команду!</title>
+</head>
+<body>
+    <div class="grid">
+        <header>
+            <div class="header-title">
+                <h1>Найди свою команду!</h1>
+                <h3>Сервис для тех, кто ищет игроков или команду</h3>
+            </div>
+            <div class="header-links">
+                <a href="https://www.vk.com/" target="_blank">
+                        <img class="link-img" src="images/vk.png" alt="VK."><span>ВКонтакте</span>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                        <img class="link-img" src="images/instagram.png" alt="Instagram."><span>Instagram</span>
+                </a>
+                <a href="https://t.me/" target="_blank">
+                        <img class="link-img" src="images/telegram.png" alt="Telegram."><span>Telegram</span>
+                </a>
+            </div>
+            <div class="header-logo">
+                <img class="logo-img" src="images/icon.png" alt="Soccer team.">
+            </div>
+        </header>   
+        <nav class="nav-desktop"> 
+            <ul>
+                <li><a href="teams.html">Команды<img class="nav-img" src="images/team.png"></a></li>
+                <li><a href="players.html">Игроки<img class="nav-img" src="images/player.png"></a></li>
+                <li><a href="profile.html">Мой профиль<img class="nav-img" src="images/profile.png"></a></li>
+            </ul>
+        </nav>
+        <nav class="nav-mobile">
+            <div class="menu">
+                <button type="button" id="unfold" class="unfold" onclick="unfold()"></button>
+                <span>Меню</span>
+            </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <span><a href="teams.html">Команды</a></span><a href="teams.html"><img class="nav-img" src="images/team.png"></a>
+                <span><a href="players.html">Игроки</a></span><a href="players.html"><img class="nav-img" src="images/player.png"></a>
+                <span><a href="profile.html">Мой профиль</a></span><a href="profile.html"><img class="nav-img" src="images/profile.png"></a>
+            </div>
+            <script src="scripts/unfold.js"></script>
+        </nav>
+        <main>
+            ПРИВЕТ ЭТО ТЕСТОВЫЙ ТЕКСТ 
+            HEY! THIS TEST TEXT
+            тестируем шрифт
+            что из этого получится?
+        </main>
+    
+        <footer>
+            <address>Copyright &copy 2021 Savinov Pavel</address>
+        </footer>
+    </div>
+</body>
+</html>
