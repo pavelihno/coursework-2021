@@ -10,9 +10,26 @@
     <title>Вход в систему</title>
 </head>
 <body>
-    <p>Логин: <input type="text" id="login"></p>
-    <p>Пароль: <input type="password" id="password"></p>
-    <button id="check">Войти</button>
-    <script src="scripts/login.js"></script>
+    <main>
+        <div class="login">
+            <h1>Вход</h1>
+            <span>Логин:</span> <input type="text" id="l-login">
+            <span>Пароль:</span> <input type="password" id="l-password">
+            <button id="enter">Войти</button>
+        </div>
+        
+        <hr>
+        
+        <form class="sign-up" id="sign-up" action="profile.html">
+            <h1>Регистрация</h1>
+            <span>Логин:</span> <input type="text" id="su-login" required>
+            <span>Пароль:</span> <input type="password" id="su-password" required>
+            <span>Почта:</span> <input type="email" id="su-email" required>
+            <span>Телефон:</span> <input type="tel" id="su-tel" required>
+            <button id="sign-up">Зарегистрироваться</button>
+        </form>
+        <script src="scripts/login.js"></script>
+    </main>
+    
 </body>
 </html>

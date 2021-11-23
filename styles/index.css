@@ -13,9 +13,12 @@
 body {
     font-family: "Golos-Regular", sans-serif;
     /* font-size: calc( (100vw - Vmin)/(Vmax - Vmin) * (Fmax - Fmin) + Fmin); */
-    font-size: calc( (100vw - 480px)/(1900 - 320) * (26 - 14) + 14px);
+    font-size: calc( (100vw - 480px)/(1900 - 320) * (21 - 13) + 13px);
     margin: 0 auto;
     background: #F0F0F0;
+}
+a {
+    color: #6d6d6d;
 }
 .grid {
     display: grid;
@@ -58,7 +61,6 @@ header {
     width: 100%;
 }
 .header-links > a span {
-    color: #6d6d6d;
     transition: all 0.1s ease-in-out;
 }
 .header-links > a span:hover {
@@ -109,7 +111,6 @@ header {
 }
 .nav-desktop > ul li a:hover {
     background: #cfcfcf2c;
-    font-weight: 600;
 }
 .nav-img {
     width: 10%;
@@ -129,7 +130,6 @@ main {
     border: solid 1px #00000036;
     border-radius: 8px;
 }
-
 .announcements h2 {
     margin: 2%;
 }
