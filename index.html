@@ -53,26 +53,40 @@
             <script src="scripts/unfold.js"></script>
         </nav>
         <main>
-            <div class="announcements" id="announcements">
+            <div class="announcements">
                 <h2>Объявления</h2>
-                <ul id="announcements-list">
+                <ul class="announcements-list" id="announcements-list">
                     <li class="announcement">
-                        <span>
+                        <span class="announcement-text">
+                            Ищем игроков! 
                             В команду Метрогородок (ЛФЛ Восток, 2-й дивизион) требуются игроки на все позиции в поле.
-                            Рассмотрим всех желающих.Имеется поляна для тренировок (среда\четверг 19:30, ул.Открытое шоссе).Платежеспособность и дисциплина - обязательно!
-                            По всем вопросам прошу писать в личку.
+                            Рассмотрим всех желающих.Имеется поляна для тренировок (среда\четверг 19:30, ул.Открытое шоссе). Платежеспособность и дисциплина - обязательно!
+                        </span>
+                        <span class="announcement-name">
+                            Команда "Метрогородок"
+                        </span>
+                        <span class="announcement-time">
+                            21.11.2021 11:04
                         </span>
                     </li>
 
                     <li class="announcement">
-                        <span>
-                            В связи с периездом в Москву Ищу возможнось поиграть в футбол! Формат лфл играю в городе ставрополе за команду Балтика! 27 лет напад!
+                        <span class="announcement-text">
+                            Ищу команду!
+                            В связи с переездом в Москву ищу команду. Формат ЛФЛ, играл в городе Ставрополе за команду Балтика! 27 лет нападающий. 
+                        </span>
+                        <span class="announcement-name">
+                            Петр Фомин
+                        </span>
+                        <span class="announcement-time">
+                            19.11.2021 23:39
                         </span>
                     </li>
                 </ul>
-                <textarea class="text-field" placeholder="Новое объявление"></textarea>
+                <textarea class="text-field" id="text-field" placeholder="Новое объявление"></textarea>
+                <button type="button" class="send" onclick="send()">Отправить</button>
             </div>
-            
+            <script src="scripts/announcement.js"></script>
         </main>
     
         <footer>
