@@ -12,17 +12,33 @@ function send() {
     spanTime.className = "announcement-time";
 
     spanText.append(textArea.value);
-    spanName.append("Я");
+    spanName.append("Павел Савинов");
     spanTime.append(getTime());
     
     li.append(spanText, spanName, spanTime);
     ul.append(li);
-    
     textArea.value = "";
 }
 
+const now = new Date()
+const month = (date) => {
+    const m = date.getMonth() + 1;
+    if (m.toString().length === 1) {
+        return `0${m}`;
+    } else {
+        return m;
+    }
+};
+const day = (date) => {
+    const d = date.getDate();
+    if (d.toString().length === 1) {
+        return `0${d}`;
+    } else {
+        return d;
+    }
+};
+
+
 function getTime() {
-    var time = new Date();
-    var timeString = time.getDate() + "." + time.getMonth() + "." + time.getFullYear() + " " + time.getHours() + ":" + time.getMinutes();
-    return timeString;
+    return `${day(now)}.${month(now)}.${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`;
 }
