@@ -1,3 +1,4 @@
+// отправить объявление
 function send() {
     var ul = document.getElementById('announcements-list');
     var textArea = document.getElementById('text-field');
@@ -38,7 +39,7 @@ const day = (date) => {
     }
 };
 
-
+// текущее время
 function getTime() {
     return `${day(now)}.${month(now)}.${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`;
 }

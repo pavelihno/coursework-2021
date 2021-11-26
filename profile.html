@@ -10,6 +10,56 @@
     <title>Мой профиль</title>
 </head>
 <body>
-    
+    <!-- 
+        фото, имя, дата рождения -> возраст, позиция, предыдущие клубы
+
+        видео игры (либо ссылки, либо frame с видео)
+
+     -->
+     <a class="back-button" href="index.html"><img src="images/back-button.png"></a>
+    <header>
+
+        <div class="header-photo">
+            <img class="profile-photo" src="images/profile-photo.png" alt="profile-photo">
+        </div>
+        <div class="info">
+            <h2 id="name">Павел Савинов</h2>
+            <span id="birthdate" class="birthdate">04.04.2002</span>
+            <span id="age" class="age">Возраст: 19</span>
+            <span id="position" class="position">крайний полузащитник/крайний нападающий</span>
+            <span id="tel-number" class="tel-number">+79172821488</span>
+            <span class="teams-title">Клубы:</span>
+            <span class="teams" id="teams"><li>ФШМ(2010-2019)</li><li>ФК Одесса(2017-2019)</li><li>ФК Хамовники(2020-настоящее время)</li>
+            </span>
+        </div>
+    </header>
+    <main>
+        <div class="video-list" id="video-list">
+            <h3>Видеозаписи</h3>
+            <input class="video-link" id="video-link" type="text">
+            <button type="button" onclick="addVideo()">Добавить</button>
+            <div class="video"> 
+                <iframe src="https://www.youtube.com/embed/7zxatAQevts"></iframe>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/I3-IOA2ovrY"></iframe>
+            </div>
+        </div>
+        <div class="edit-profile">
+            <h3>Редактировать профиль</h3>
+            <span>Имя Фамилия</span>
+            <input class="edit-name" id="edit-name" type="text" value="">
+            <span>Дата рождения</span>
+            <input class="edit-birthdate" id="edit-birthdate" type="date" value="1999-01-01">
+            <span>Амплуа</span>
+            <input class="edit-position" id="edit-position" type="text" value="">
+            <span>Номер телефона</span>
+            <input class="edit-tel" id="edit-tel" type="tel" value="">
+            <span>Клубы</span>
+            <textarea class="edit-teams" id="edit-teams"></textarea>
+            <button type="button" onclick="editProfile()">Редактировать</button>
+        </div>
+        <script src="scripts/profile.js"></script>
+    </main>
 </body>
 </html>

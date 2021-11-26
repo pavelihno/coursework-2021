@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "Golos-Regular";
+    src: url("../fonts/Golos-Text_Regular.ttf") format("opentype");
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Golos-Bold";
+    src: url("../fonts/Golos-Text_DemiBold.ttf") format("opentype");
+    font-weight: normal;
+    font-display: swap;
+}
+body {
+    font-family: "Golos-Regular", sans-serif;
+    font-size: calc( (100vw - 480px)/(1900 - 320) * (21 - 13) + 13px);
+    margin: 0 auto;
+    background: #F0F0F0;
+}
+header {
+    display: flex;
+    margin: 1% 5%;
+    flex-direction: row;
+    background: #FBFBFB;
+    border: solid 1px #00000036;
+    box-sizing: border-box;
+}
+header .header-photo {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    min-width: 100px;
+    background-color: #e0e0e050;
+}
+.profile-photo {
+    width: 100%;
+}
+.back-button img {
+    margin-top: 7px;
+    margin-left: 5%;
+    border-radius: 100%;
+    width: 3%;
+}
+.back-button img:hover {
+    background-color: #b8b8b842;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.teams {
+    list-style-type: none;
+    line-height: 200%;
+    padding-left: 0;
+}
+.birthdate, .age, .position, .tel-number {
+    margin: 2% 0%;
+}
+.age {
+    text-decoration: underline;
+}
+.tel-number {
+    text-decoration: underline;
+    font-style: italic; 
+}
+.teams-title {
+    margin: 2% 0%;
+    font-weight: 700;
+}
+.teams {
+    margin: 2% 0%;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 5%;
+}
+.video-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 50%;
+}
+.video {
+    height: 40%;
+    width: 80%;
+    margin: 5% auto;
+}
+.video iframe {
+    width: 100%;
+    height: 100%;
+}
+.edit-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    width: 50%;
+    height: 900px;
+}
+.edit-name, .edit-birthdate, .edit-position, .edit-tel, .edit-teams, .video-link {
+    width: 70%;
+    font-family: "Golos-Regular", sans-serif;
+    font-size: 120%;
+}
+.edit-teams {
+    resize: none;
+    height: 250px;
+}
+button {
+    cursor: pointer;
+    width: 15%;
+    min-width: fit-content;
+    padding: 1.5%;
+    margin: 1%;
+    color: #313131;
+    font-size: 110%;
+    font-family: "Golos-Regular", sans-serif;
+    background: #dddddda2;
+    border: solid 1px #00000036;
+    box-sizing: border-box;
+}
+button:active {
+    transform: translateY(2px);
+}
+
+@media screen and (min-width: 992px) { /* разрешение экрана компьютера */
+
+}
+@media screen and (max-width: 992px) and (min-width: 576px) {  /* разрешение экрана планшета */
+    .back-button img {
+        width: 8%;
+    }
+    .edit-name, .edit-birthdate, .edit-position, .edit-tel, .edit-teams {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 576px) {  /* разрешение экрана телефона */
+    header .profile-photo {
+        min-width: 60px;
+        max-width: 200px;
+    }
+    .back-button img {
+        width: 9%;
+    }
+    main {
+        flex-direction: column;
+    }
+    .video-list, .edit-profile {
+        width: 90%;
+        margin: 2% auto;
+    }
+    .edit-name, .edit-birthdate, .edit-position, .edit-tel, .edit-teams {
+        width: 70%;
+    }
+    .edit-profile {
+        height: 600px;
+    }
+}

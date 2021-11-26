@@ -1,4 +1,5 @@
-document.getElementById('enter').onclick = function() {
+// войти
+function enter() {
     let login = document.getElementById('l-login').value;
     let password = document.getElementById('l-password').value;
 
