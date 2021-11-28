@@ -47,7 +47,7 @@ header .header-photo {
     line-height: 200%;
     padding-left: 0;
 }
-.birthdate, .age, .position, .tel-number {
+.info span {
     margin: 2% 0%;
 }
 .age {
@@ -57,12 +57,8 @@ header .header-photo {
     text-decoration: underline;
     font-style: italic; 
 }
-.teams-title {
-    margin: 2% 0%;
+.teams-title, .leagues-title {
     font-weight: 700;
-}
-.teams {
-    margin: 2% 0%;
 }
 main {
     display: flex;
@@ -93,12 +89,13 @@ main {
     width: 50%;
     height: 900px;
 }
-.edit-name, .edit-birthdate, .edit-position, .edit-tel, .edit-teams, .video-link {
+.edit-name, .edit-birthdate, .edit-position, .edit-tel, .edit-teams, .edit-leagues, .video-link {
     width: 70%;
     font-family: "Golos-Regular", sans-serif;
     font-size: 120%;
+    min-height: 30px;
 }
-.edit-teams {
+.edit-teams, .edit-leagues {
     resize: none;
     height: 250px;
 }
@@ -131,7 +128,7 @@ footer {
     .back-button img {
         width: 8%;
     }
-    .edit-name, .edit-birthdate, .edit-position, .edit-tel, .edit-teams {
+    .edit-name, .edit-birthdate, .edit-position, .edit-tel, .edit-teams, .edit-leagues {
         width: 70%;
     }
 }
@@ -150,7 +147,7 @@ footer {
         width: 90%;
         margin: 2% auto;
     }
-    .edit-name, .edit-birthdate, .edit-position, .edit-tel, .edit-teams {
+    .edit-name, .edit-birthdate, .edit-position, .edit-tel, .edit-teams, .edit-leagues {
         width: 70%;
     }
     .edit-profile {

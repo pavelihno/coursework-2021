@@ -4,17 +4,20 @@ var position = document.getElementById('position');
 var age = document.getElementById('age');
 var tel = document.getElementById('tel-number');
 var teams = document.getElementById('teams');
+var leagues = document.getElementById('leagues');
 
 var editSurname = document.getElementById('edit-name');
 var editBirtdate = document.getElementById('edit-birthdate');
 var editPosition = document.getElementById('edit-position');
 var editTel = document.getElementById('edit-tel'); 
-var editTeams = document.getElementById('edit-teams')
+var editTeams = document.getElementById('edit-teams');
+var editLeagues = document.getElementById('edit-leagues');
 
 editSurname.setAttribute("value", surname.innerText);
-editPosition.setAttribute("value", position.innerText)
-editTel.setAttribute("value", tel.innerText)
-editTeams.innerText = teams.innerHTML;
+editPosition.setAttribute("value", position.innerText);
+editTel.setAttribute("value", tel.innerText);
+editTeams.innerText = teams.innerText;
+editLeagues.innerText = leagues.innerText
 
 // изменить информацию в профиле
 function editProfile() {
@@ -23,7 +26,9 @@ function editProfile() {
     changeAge(editBirtdate.value);
     position.innerText = editPosition.value;
     tel.innerText = editTel.value;
-    teams.innerHTML = editTeams.value;
+    teams.innerText = editTeams.value;
+    leagues.innerText = editLeagues.value;
+    alert("Изменения сохранены");
 }
 // изменить формат даты
 function editDateFormat(date) {
@@ -50,7 +55,11 @@ function addVideo() {
         var iframe = document.createElement("iframe");
         iframe.setAttribute("src", url);
         video.append(iframe);
-        videoList.append(video);    
+        videoList.append(video);
+        alert("Видеозапись добавлена");    
+    }
+    else {
+        alert("Указана неверная ссылка");
     }
     document.getElementById('video-link').value = "";
 }

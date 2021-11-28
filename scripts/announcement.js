@@ -19,6 +19,7 @@ function send() {
     li.append(spanText, spanName, spanTime);
     ul.append(li);
     textArea.value = "";
+    alert("Объявление опубликовано")
 }
 
 const now = new Date()
