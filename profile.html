@@ -10,12 +10,6 @@
     <title>Мой профиль</title>
 </head>
 <body>
-    <!-- 
-        фото, имя, дата рождения -> возраст, позиция, предыдущие клубы
-
-        видео игры (либо ссылки, либо frame с видео)
-
-     -->
      <a class="back-button" href="index.html"><img src="images/back-button.png"></a>
     <header>
 
@@ -36,7 +30,7 @@
     <main>
         <div class="video-list" id="video-list">
             <h3>Видеозаписи</h3>
-            <input class="video-link" id="video-link" type="text">
+            <input class="video-link" id="video-link" type="text" placeholder="https://www.youtube.com/embed/7zxatAQevts">
             <button type="button" onclick="addVideo()">Добавить</button>
             <div class="video"> 
                 <iframe src="https://www.youtube.com/embed/7zxatAQevts"></iframe>
@@ -50,7 +44,7 @@
             <span>Имя Фамилия</span>
             <input class="edit-name" id="edit-name" type="text" value="">
             <span>Дата рождения</span>
-            <input class="edit-birthdate" id="edit-birthdate" type="date" value="1999-01-01">
+            <input class="edit-birthdate" id="edit-birthdate" type="date" value="2002-04-04">
             <span>Амплуа</span>
             <input class="edit-position" id="edit-position" type="text" value="">
             <span>Номер телефона</span>
@@ -61,5 +55,9 @@
         </div>
         <script src="scripts/profile.js"></script>
     </main>
+
+    <footer>
+        <address>Copyright &copy 2021 Savinov Pavel</address>
+    </footer>
 </body>
 </html>

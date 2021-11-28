@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Golos-Regular";
+    src: url("../fonts/Golos-Text_Regular.ttf") format("opentype");
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Golos-Bold";
+    src: url("../fonts/Golos-Text_DemiBold.ttf") format("opentype");
+    font-weight: normal;
+    font-display: swap;
+}
+body {
+    font-family: "Golos-Regular", sans-serif;
+    font-size: calc( (100vw - 480px)/(1900 - 320) * (21 - 13) + 13px);
+    margin: 0 auto;
+    background: #F0F0F0;
+}
+.back-button img {
+    margin-top: 7px;
+    margin-left: 5%;
+    border-radius: 100%;
+    width: 3%;
+}
+.back-button img:hover {
+    background-color: #b8b8b842;
+}
+footer {
+    margin: 2% auto 0% auto;
+    font-size: 80%;
+    text-align: center;
+}
