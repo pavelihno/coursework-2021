@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "Golos-Regular";
+    src: url("../fonts/Golos-Text_Regular.ttf") format("opentype");
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Golos-Bold";
+    src: url("../fonts/Golos-Text_DemiBold.ttf") format("opentype");
+    font-weight: normal;
+    font-display: swap;
+}
+body {
+    font-family: "Golos-Regular", sans-serif;
+    font-size: calc( (100vw - 480px)/(1900 - 320) * (21 - 13) + 13px);
+    margin: 0 auto;
+    background: #F0F0F0;
+}
+.back-button img {
+    margin-top: 7px;
+    margin-left: 5%;
+    border-radius: 100%;
+    width: 3%;
+}
+.back-button img:hover {
+    background-color: #b8b8b842;
+}
+header {
+    width: 90%;
+    margin: 1% auto;
+    background: #FBFBFB;
+    border: solid 1px #00000036;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.nav-button {
+    cursor: pointer;
+    min-width: fit-content;
+    padding: 1.5%;
+    color: #313131;
+    font-size: 110%;
+    font-family: "Golos-Regular", sans-serif;
+    background: transparent;
+    box-sizing: border-box;
+    border: none;
+    width: 25%;
+    transition: all 0.5s ease;
+}
+.nav-button:hover {
+    background: #dddddda2;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 5%;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 1%;
+    width: 100%;
+}
+.player, .team {
+    width: 100%;
+    background: #dddddda2;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    border: solid 1px #00000036;
+}
+.player:hover::after, .team:hover::after {
+    content: attr(tel);
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+}
+.player:hover::after {
+    left: 50%; top: 43%;
+}
+.team:hover::after {
+    left: 70%; top: 43%;
+}
+.player-photo {
+    flex-basis: 10%;
+    min-width: 80px;
+    border-radius: 100%;
+    border: solid 1px #00000036;
+    background: #ffffffee;
+    overflow: hidden;
+}
+.team-logo {
+    flex-basis: 10%;
+    min-width: 80px;
+    overflow: hidden;
+}
+.player-photo img, .team-logo img {
+    min-width: 80px;
+    width: 100%;
+}
+span {
+    width: fit-content;
+    margin: auto 2%;
+}
+.player-name, .team-name {
+    font-family: "Golos-Bold";
+    flex-basis: 20%;
+}
+.player-position {
+    flex-basis: 30%;
+    font-weight: 600;
+}
+.player-division {
+    flex-basis: 30%;
+    text-decoration: underline;
+}
+.team-division {
+    text-decoration: underline;
+}
+footer {
+    margin: 2% auto 1% auto;
+    font-size: 80%;
+    text-align: center;
+}
+@media screen and (max-width: 992px) and (min-width: 576px) {  /* разрешение экрана планшета */
+    .back-button img {
+        width: 8%;
+    }
+    .player:hover::after {
+        left: 35%; top: 70%;
+    }
+    .team:hover::after {
+        left: 70%; top: 43%;
+    }
+}
+@media screen and (max-width: 576px) {  /* разрешение экрана телефона */
+    .back-button img {
+        width: 9%;
+    }
+    .player, .team {
+        column-gap: 0%;
+    }
+    .block {
+        margin-top: 5%;
+    }
+    .player:hover::after {
+        left: 40%; top: 73%;
+    }
+    .team:hover::after {
+        left: 50%; top: 73%;
+    }
+}

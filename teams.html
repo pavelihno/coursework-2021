@@ -4,19 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/teams.css" type="text/css">
+    <link rel="stylesheet" href="styles/players-teams.css" type="text/css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="images/icon.png" type="image/png" sizes="32x32">
     <title>Команды</title>
 </head>
 <body>
-    <a class="back-button" href="index.html"><img src="images/back-button.png"></a> 
+    <a class="back-button" href="index.html"><img src="images/back-button.png"></a>
+    <header>
+        <nav>
+            <button class="nav-button" id="lfl-button" onclick="display(0)">ЛФЛ</button>
+            <button class="nav-button" id="afl-button" onclick="display(1)">AFL</button>
+            <button class="nav-button" id="lfc-button" onclick="display(2)">ЛФК</button>
+            <button class="nav-button" id="other-button" onclick="display(3)">Другое</button>
+        </nav>
+    </header>
+    <main>
+        <div class="block lfl" id="lfl">
+            <div class="team" tel="+7(925)488-12-47">
+                <div class="team-logo"><img src="images/team1.png"></div>
+                <span class="team-name">ФК Спарта</span>
+                <span class="team-division">Казань Высшая лига</span>
+            </div>
 
+            <div class="team" tel="+7(903)020-36-45">
+                <div class="team-logo"><img src="images/team2.png"></div>
+                <span class="team-name">ФК Одиссей</span>
+                <span class="team-division">Запад Первый дивизион</span>
+            </div>
+        </div>
+        <div class="block afl" id="afl">
+            <div class="team" tel="+7(964)841-75-32">
+                <div class="team-logo"><img src="images/team3.png"></div>
+                <span class="team-name">ФК Ливпул</span>
+                <span class="team-division">Premier League</span>
+            </div>
+
+            <div class="team" tel="+7(903)409-33-09">
+                <div class="team-logo"><img src="images/team8.png"></div>
+                <span class="team-name">ФК Барс</span>
+                <span class="team-division">La Liga</span>
+            </div>
+        </div>
+        <div class="block lfc" id="lfc">
+            <div class="team" tel="+7(903)445-09-20">
+                <div class="team-logo"><img src="images/team5.png"></div>
+                <span class="team-name">ЛФК Зимняя вьюга</span>
+                <span class="team-division">Москва Дивизион А</span>
+            </div>
+
+            <div class="team" tel="+7(928)972-36-60">
+                <div class="team-logo"><img src="images/team6.png"></div>
+                <span class="team-name">ЛФК Ногомячисты</span>
+                <span class="team-division">Москва Дивизион Б</span>
+            </div>
+        </div>
+        <div class="block other" id="other">
+            <div class="team" tel="+7(925)784-08-42">
+                <div class="team-logo"><img src="images/team7.png"></div>
+                <span class="team-name">ФК Фламенго</span>
+                <span class="team-division">Amateur League Мир</span>
+            </div>
+
+            <div class="team" tel="+7(980)419-95-27">
+                <div class="team-logo"><img src="images/team4.png"></div>
+                <span class="team-name">ФК Стелла</span>
+                <span class="team-division">Amateur League Мир</span>
+            </div>
+        </div>
+    </main>
 
 
 
     <footer>
         <address>Copyright &copy 2021 Savinov Pavel</address>
     </footer>
+    <script src="scripts/players-teams.js"></script>
 </body>
 </html>

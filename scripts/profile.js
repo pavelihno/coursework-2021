@@ -28,7 +28,6 @@ function editProfile() {
     tel.innerText = editTel.value;
     teams.innerText = editTeams.value;
     leagues.innerText = editLeagues.value;
-    alert("Изменения сохранены");
 }
 // изменить формат даты
 function editDateFormat(date) {
@@ -55,8 +54,7 @@ function addVideo() {
         var iframe = document.createElement("iframe");
         iframe.setAttribute("src", url);
         video.append(iframe);
-        videoList.append(video);
-        alert("Видеозапись добавлена");    
+        videoList.append(video);   
     }
     else {
         alert("Указана неверная ссылка");
