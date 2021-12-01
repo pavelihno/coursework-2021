@@ -1,4 +1,5 @@
 var x = 0;
+// развернуть меню
 function unfold() {
     x++;
     menu = document.querySelector("#mobile-menu");

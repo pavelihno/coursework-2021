@@ -22,6 +22,7 @@ function send() {
 }
 
 const now = new Date()
+// форматирование месяца
 const month = (date) => {
     const m = date.getMonth() + 1;
     if (m.toString().length === 1) {
@@ -30,6 +31,7 @@ const month = (date) => {
         return m;
     }
 };
+// форматирование числа
 const day = (date) => {
     const d = date.getDate();
     if (d.toString().length === 1) {
@@ -39,7 +41,7 @@ const day = (date) => {
     }
 };
 
-// текущее время
+// получить текущее время
 function getTime() {
     return `${day(now)}.${month(now)}.${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`;
 }

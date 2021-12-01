@@ -1,3 +1,4 @@
+// изменяемые поля
 var surname = document.getElementById('name');
 var birthdate = document.getElementById('birthdate');
 var position = document.getElementById('position');
@@ -6,6 +7,7 @@ var tel = document.getElementById('tel-number');
 var teams = document.getElementById('teams');
 var leagues = document.getElementById('leagues');
 
+// поля для ввода
 var editSurname = document.getElementById('edit-name');
 var editBirtdate = document.getElementById('edit-birthdate');
 var editPosition = document.getElementById('edit-position');
@@ -43,7 +45,6 @@ function changeAge(date) {
     age.innerText = "Возраст: " + Math.floor((now - date) / (1000*60*60*24*365));
 }
 
-
 // добавить видео
 function addVideo() {
     var url = document.getElementById('video-link').value;
@@ -56,9 +57,8 @@ function addVideo() {
         video.append(iframe);
         videoList.append(video);   
     }
-    else {
+    else
         alert("Указана неверная ссылка");
-    }
     document.getElementById('video-link').value = "";
 }
 

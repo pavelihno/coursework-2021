@@ -1,18 +1,21 @@
+// кнопки навигации
 var lflButton = document.getElementById('lfl-button');
 var aflButton = document.getElementById('afl-button');
 var lfcButton = document.getElementById('lfc-button');
 var otherButton = document.getElementById('other-button');
 var buttons = [lflButton, aflButton, lfcButton, otherButton];
 
+// информативные блоки
 var lfl = document.getElementById('lfl');
 var afl = document.getElementById('afl');
 var lfc = document.getElementById('lfc');
 var other = document.getElementById('other');
 var blocks = [lfl, afl, lfc, other];
 
+// отобразить информативный блок
 function display(i) {
     for (var j = 0; j < 4; j++) {
-        // отключать видимость
+        // отключить видимость
         if (j != i) {
             buttons[j].style["border"] = "none";
             buttons[j].style["background"] = "transparent";
