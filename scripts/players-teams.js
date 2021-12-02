@@ -1,20 +1,20 @@
 // кнопки навигации
-var lflButton = document.getElementById('lfl-button');
-var aflButton = document.getElementById('afl-button');
-var lfcButton = document.getElementById('lfc-button');
-var otherButton = document.getElementById('other-button');
-var buttons = [lflButton, aflButton, lfcButton, otherButton];
+let lflButton = document.getElementById('lfl-button');
+let aflButton = document.getElementById('afl-button');
+let lfcButton = document.getElementById('lfc-button');
+let otherButton = document.getElementById('other-button');
+let buttons = [lflButton, aflButton, lfcButton, otherButton];
 
 // информативные блоки
-var lfl = document.getElementById('lfl');
-var afl = document.getElementById('afl');
-var lfc = document.getElementById('lfc');
-var other = document.getElementById('other');
-var blocks = [lfl, afl, lfc, other];
+let lfl = document.getElementById('lfl');
+let afl = document.getElementById('afl');
+let lfc = document.getElementById('lfc');
+let other = document.getElementById('other');
+let blocks = [lfl, afl, lfc, other];
 
 // отобразить информативный блок
 function display(i) {
-    for (var j = 0; j < 4; j++) {
+    for (let j = 0; j < 4; j++) {
         // отключить видимость
         if (j != i) {
             buttons[j].style["border"] = "none";

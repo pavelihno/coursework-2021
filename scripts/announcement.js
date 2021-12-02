@@ -1,15 +1,15 @@
 // отправить объявление
 function send() {
-    var ul = document.getElementById('announcements-list');
-    var textArea = document.getElementById('text-field');
-    var li = document.createElement("li");
+    let ul = document.getElementById('announcements-list');
+    let textArea = document.getElementById('text-field');
+    let li = document.createElement("li");
     li.className = "announcement";
 
-    var spanText = document.createElement("span");
+    let spanText = document.createElement("span");
     spanText.className = "announcement-text";
-    var spanName = document.createElement("span");
+    let spanName = document.createElement("span");
     spanName.className = "announcement-name";
-    var spanTime = document.createElement("span");
+    let spanTime = document.createElement("span");
     spanTime.className = "announcement-time";
 
     spanText.append(textArea.value);

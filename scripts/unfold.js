@@ -1,4 +1,4 @@
-var x = 0;
+let x = 0;
 // развернуть меню
 function unfold() {
     x++;
