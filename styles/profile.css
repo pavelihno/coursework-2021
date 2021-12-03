@@ -16,6 +16,9 @@ header {
     flex-direction: row;
     background: #FBFBFB;
     border: solid 1px #00000036;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
 header .header-photo {
@@ -70,7 +73,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-   width: 50%;
+    width: 50%;
 }
 .video {
     height: 40%;
@@ -110,9 +113,15 @@ button {
     font-family: "Golos-Regular", sans-serif;
     background: #dddddda2;
     border: solid 1px #00000036;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
 button:active {
+    -moz-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
     transform: translateY(2px);
 }
 footer {

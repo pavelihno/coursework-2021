@@ -30,6 +30,9 @@ header {
     margin: 1% auto;
     background: #FBFBFB;
     border: solid 1px #00000036;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
 nav {
@@ -45,9 +48,15 @@ nav {
     font-size: 110%;
     font-family: "Golos-Regular", sans-serif;
     background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
     border: none;
     width: 25%;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 .nav-button:hover {

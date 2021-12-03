@@ -28,6 +28,9 @@ header, nav, main {
     display: flex;
     background: #FBFBFB;
     border: solid 1px #00000036;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
 header {
@@ -61,6 +64,9 @@ header {
     width: 100%;
 }
 .header-links > a span {
+    -webkit-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
 .header-links > a span:hover {
@@ -121,6 +127,9 @@ main {
     display: block;
 }
 .text-field {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
     resize: none;
     width: 100%;
@@ -169,11 +178,17 @@ main {
     background: #dddddd;
     border-radius: 8px;
     border: solid 1px #00000036;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
     box-shadow: 2px 3px #00122752;
 }
 .send:active {
     box-shadow: 1px 2px #00122752;
+    -moz-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
     transform: translateY(2px);
 }
 footer {
@@ -196,7 +211,6 @@ footer {
         margin-right: 5%;
         width: 18%;
     }
-
     nav {
         grid-column: 1 / 10;
     }
@@ -313,7 +327,10 @@ footer {
         background-size: cover;
         border-radius: 8px;
         border: none;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;;
     }
     .text-field {
         height: 100px;
